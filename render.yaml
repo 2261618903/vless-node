@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: xray-node
+    runtime: docker
+    plan: free
+    envVars:
+      - key: UUID
+        generateValue: true
+      - key: WS_PATH
+        value: /ws
